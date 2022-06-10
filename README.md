@@ -4,3 +4,5 @@ Preprocessed the image dataset by resizing, conversion to grayscale and applying
 features and applied dimensionality reduction.
 Trained the classifiers using classification algorithms like SVM, Random forest, KNN, Decision tree and achieved best
 accuracy of 83.38% using SVM
+
+Link to the dataset : https://drive.google.com/drive/folders/1-rUfOo3d-FGsb7si3mUwA_prOiAK4usc?usp=sharing
