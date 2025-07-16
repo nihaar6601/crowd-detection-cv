@@ -1,4 +1,4 @@
-# computer-vision
+# Crowd Detection
 Developed a machine learning model to classify a place as crowded or non-crowded.
 Preprocessed the image dataset by resizing, conversion to grayscale and applying histogram equalization, extracted SIFT
 features and applied dimensionality reduction.
