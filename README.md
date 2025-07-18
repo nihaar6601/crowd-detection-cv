@@ -1,55 +1,49 @@
-# Crowd Detection using CV
+# Crowd Detection Using CV
 
-### Project Overview:
+## Overview:
+In public spaces, the inability to perceive crowd density poses a significant risk to individuals with visual impairments. This project addresses that challenge by developing a real-time crowd detection system, enabling safer navigation through the environment.
 
-This project focuses on classifying places as crowded or non-crowded to assist visually impaired individuals in navigating their surroundings. The system uses image processing and machine learning techniques to analyze images and detect the presence of crowds.
+## Objective:
+ - To design a reliable and efficient system that detects crowded versus non-crowded environments from images and provides actionable alerts to assist visually impaired users in making safer mobility decisions.
 
-### Key Components:
-1. Data Preprocessing
+## Key Features:
+ - Real-Time Crowd Detection:
+   - Utilizes computer vision techniques to classify crowd levels in real-time.
 
- - Image Resizing – Standardized all images for uniformity
+ - High Accuracy Classification:
+   - Achieved highest accuracy using SVM, outperforming classifiers like KNN, Random Forest, Decision Tree, and Logistic Regression.
 
- - Grayscale Conversion – Simplified images to reduce computational complexity
+ - Assistive Integration:
+   - Designed for future integration with wearable devices to provide audio or haptic feedback to the user.
 
- - Histogram Equalization – Improved contrast for better feature extraction
+ - Multi-Classifier Evaluation:
+   - Benchmarked multiple ML models to ensure optimal performance across different scenarios.
 
-2. Feature Extraction
+## Methodology:
+ - Data Collection & Preprocessing:
+   - Compiled a dataset of images labeled as crowded or non-crowded.
 
- - SIFT (Scale-Invariant Feature Transform):
-   - Extracted key features invariant to scale and rotation
+   - Applied preprocessing steps including resizing, grayscale conversion, and histogram equalization.
 
- - Dimensionality Reduction:
-   - Reduced feature space using PCA for better computational efficiency
+ - Feature Extraction:
+   - Used SIFT (Scale-Invariant Feature Transform) to extract robust visual features.
 
-3. Classification
+   - Reduced feature dimensions with Principal Component Analysis (PCA) to enhance model efficiency.
 
- - Multiple machine learning classifiers were trained and evaluated:
+ - Model Training & Evaluation:
+   - Trained multiple classifiers including SVM, Random Forest, KNN, Decision Tree, and Logistic Regression.
 
-   - Support Vector Machine	
-   - Random Forest	
-   - K-Nearest Neighbors
-   - Decision Tree	
-   - Logistic Regression
+   - Evaluated models using accuracy, precision, recall, and F1-score.
 
- - Random Forest classifier resulted in an accuracy of 83.22%
+## Results:
+ - The system achieved high accuracy with SVM for crowd classification.
 
-### Technologies Used:
+ - Demonstrated potential for real-time crowd awareness assistance for visually impaired individuals.
 
- - Python
+## Future Work:
+ - Dataset Expansion: Incorporate varied crowd types, perspectives, and lighting conditions.
 
- - OpenCV – For image preprocessing and SIFT feature extraction
-
- - Scikit-learn – For machine learning models and evaluation
-
-### Features:
-
- - Crowd detection through image classification
-
- - SIFT-based feature extraction pipeline
-
- - Evaluation using accuracy, precision, recall, and F1 score
-
- - Designed for assistive technology applications
+ - Real-World Testing: Conduct user trials to validate system usability in live environments.
 
 
 Link to the dataset : https://drive.google.com/drive/folders/1-rUfOo3d-FGsb7si3mUwA_prOiAK4usc?usp=sharing
